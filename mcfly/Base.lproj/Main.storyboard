@@ -47,6 +47,15 @@
                                     <segue destination="rMJ-jM-uPO" kind="embed" id="Sn4-0u-gZ0"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNp-qe-oLi">
+                                <rect key="frame" x="170" y="637" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="mT9-Kj-gqA" kind="show" id="zMK-hT-1DA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -100,6 +109,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdR-X4-C4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="890" y="-147"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OXQ-my-RT5">
+            <objects>
+                <viewController id="mT9-Kj-gqA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4SZ-PA-FcY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOj-J9-dgc">
+                                <rect key="frame" x="147" y="304" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="dadsasd"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G38-oo-ZF9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WgV-Jy-SP3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VR-q4-bk4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="98"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mzC-mU-aQ0">
