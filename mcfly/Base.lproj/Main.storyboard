@@ -28,9 +28,12 @@
                                     <segment title="Logeo"/>
                                     <segment title="Registro"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="uP4-FZ-yJB"/>
+                                </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxS-zi-zXC">
-                                <rect key="frame" x="16" y="283" width="382" height="300"/>
+                                <rect key="frame" x="16" y="282.5" width="382" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="fv1-jo-Vh8"/>
                                 </constraints>
@@ -39,7 +42,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXa-NJ-q6I">
-                                <rect key="frame" x="16" y="283" width="382" height="301"/>
+                                <rect key="frame" x="16" y="282.5" width="382" height="301"/>
                                 <connections>
                                     <segue destination="rMJ-jM-uPO" kind="embed" id="Sn4-0u-gZ0"/>
                                 </connections>
@@ -64,6 +67,11 @@
                             <constraint firstItem="CxS-zi-zXC" firstAttribute="top" secondItem="Le6-T8-QFU" secondAttribute="bottom" constant="10" id="vPG-1Z-xb7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentlogeo" destination="Le6-T8-QFU" id="Uhd-tq-GL8"/>
+                        <outlet property="sglogear" destination="CxS-zi-zXC" id="FR6-ci-RC2"/>
+                        <outlet property="sgregister" destination="eXa-NJ-q6I" id="fVj-gl-LcP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,6 +84,16 @@
                     <view key="view" contentMode="scaleToFill" id="Wlg-jx-Rhn">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHN-30-z6U">
+                                <rect key="frame" x="170" y="112" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WDm-D8-dny"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -90,6 +108,16 @@
                     <view key="view" contentMode="scaleToFill" id="BxD-4U-tfg">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="301"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnA-yE-NaC">
+                                <rect key="frame" x="147" y="135" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mm4-NE-ySq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
