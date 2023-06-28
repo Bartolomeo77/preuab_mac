@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C16-Hh-Zxi">
-                                <rect key="frame" x="38" y="138" width="347" height="64.5"/>
+                                <rect key="frame" x="38" y="134" width="347" height="64.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="59"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Le6-T8-QFU">
-                                <rect key="frame" x="38" y="245.5" width="347" height="32"/>
+                                <rect key="frame" x="38" y="241.5" width="347" height="32"/>
                                 <segments>
                                     <segment title="Logeo"/>
                                     <segment title="Registro"/>
@@ -34,7 +33,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxS-zi-zXC">
-                                <rect key="frame" x="16" y="286.5" width="382" height="300"/>
+                                <rect key="frame" x="16" y="282.5" width="382" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="fv1-jo-Vh8"/>
                                 </constraints>
@@ -43,7 +42,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXa-NJ-q6I">
-                                <rect key="frame" x="16" y="286.5" width="382" height="301"/>
+                                <rect key="frame" x="16" y="282.5" width="382" height="301"/>
                                 <connections>
                                     <segue destination="rMJ-jM-uPO" kind="embed" id="Sn4-0u-gZ0"/>
                                 </connections>
@@ -116,8 +115,16 @@
             <objects>
                 <viewController id="mT9-Kj-gqA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4SZ-PA-FcY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOj-J9-dgc">
+                                <rect key="frame" x="147" y="304" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="dadsasd"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="G38-oo-ZF9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
